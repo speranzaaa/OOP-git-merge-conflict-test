@@ -1,11 +1,18 @@
+
 public final class HelloWorld {
 
-	public static void main(final String[] args) {
-		System.out.println("This program is running in a PC with " + procNumber() + " logic processors!");
-	}
+        private static final String AUTHOR = "Danilo Pianini";
 
-	public static int procNumber() {
+        public static void main(final String[] args) {
+
+                System.out.println("This program has been realised by " + AUTHOR);
+                System.out.println("This program is running in a PC with " + Runtime.getRuntime().availableProcessors() + " logic processors!");
+        }
+
+        public static int procNumber() {
+                
 		return Runtime.getRuntime().availableProcessors();
-	}
+
+        }
 
 }
